@@ -1,0 +1,18 @@
+draft: false
+
+acme:
+  email_account: <your-email>
+  staging: false
+
+profiles:
+  - name: namecheap_profile
+    provider: namecheap
+    provider_options:
+      auth_token: <namecheap-auth-token>
+      auth_username: <namecheap-username>
+      auth_client_ip: <namecheap-client-ip>
+certificates:
+  - domains:
+      - "*.xyz.com"
+      - xyz.com
+    profile: namecheap_profile
